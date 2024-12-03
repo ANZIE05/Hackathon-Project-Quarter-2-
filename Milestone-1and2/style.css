@@ -1,0 +1,173 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: rgba(193, 155, 4, 0.877);
+    color: #2c2c2c;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid black;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #2c2c2c;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgba(252, 223, 106, 0.877);
+}
+
+
+
+
+
+
+/* Media Queries */
+
+/* Extra Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+    .resume-container {
+        width: 75%;
+    }
+}
+
+/* Large Screens (992px to 1199px) */
+@media (max-width: 1199px) {
+    body {
+        padding: 100px;
+    }
+    .resume-container {
+        width: 85%;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+/* Medium Screens (768px to 991px) */
+@media (max-width: 991px) {
+    .left-section {
+        width: 40%;
+    }
+    .right-section {
+        width: 60%;
+    }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* Small Screens (576px to 767px) */
+@media (max-width: 767px) {
+    .resume-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Screens (up to 575px) */
+@media (max-width: 575px) {
+    body {
+        padding: 50px;
+    }
+    .resume-container {
+        width: 95%;
+    }
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p, ul li {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
